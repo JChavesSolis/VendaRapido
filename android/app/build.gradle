@@ -117,3 +117,20 @@ dependencies {
         implementation jscFlavor
     }
 }
+
+def vectorIconsFontsDir = file("$rootDir/../node_modules/react-native-vector-icons/Fonts")
+def targetDir = file("$projectDir/src/main/assets/fonts")
+
+tasks.register("copyVectorIcons", Copy) {
+    from(vectorIconsFontsDir)
+    into(targetDir)
+    include("**/*.ttf")
+    doFirst {
+        if (targetDir.exists()) {
+            println("Fonts already exist, skipping copy")
+            return
+        }
+    }
+}
+
+preBuild.dependsOn(copyVectorIcons)

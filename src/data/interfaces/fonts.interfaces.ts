@@ -1,0 +1,34 @@
+export interface FontStyles {
+    displayLargeBold: any;
+    displayLargeRegular: any;
+    displayMediumBold: any;
+    displayMediumRegular: any;
+    displaySmallBold: any;
+    displaySmallRegular: any;
+    headlineLargeBold: any;
+    headlineLargeRegular: any;
+    headlineMediumBold: any;
+    headlineMediumRegular: any;
+    headlineSmallBold: any;
+    headlineSmallRegular: any;
+    titleLargeBold: any;
+    titleLargeRegular: any;
+    titleMediumBold: any;
+    titleMediumRegular: any;
+    titleSmallBold: any;
+    titleSmallRegular: any;
+    bodyLargeBold: any;
+    bodyLargeRegular: any;
+    bodyMediumBold: any;
+    bodyMediumRegular: any;
+    bodySmallBold: any;
+    bodySmallRegular: any;
+    labelLargeBold: any;
+    labelLargeRegular: any;
+    labelMediumBold: any;
+    labelMediumRegular: any;
+    labelSmallBold: any;
+    labelSmallRegular: any;
+    labelPromoSmallBold: any;
+    labelPromoSmallRegular: any;
+}
